@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <rect width="48" height="48" rx="12" fill="#059669"/>
+  <circle cx="18" cy="32" r="6" fill="#ffffff"/>
+  <circle cx="34" cy="27" r="6" fill="#ffffff"/>
+  <path d="M24 32V15C24 13.8954 24.8954 13 26 13H36C37.1046 13 38 13.8954 38 15V27" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 20H38" stroke="#ffffff" stroke-width="3"/>
+  <text x="60" y="32" font-family="system-ui, sans-serif" font-size="24" font-weight="bold" fill="#059669">Melody<tspan fill="#10b981">Hub</tspan></text>
+</svg>

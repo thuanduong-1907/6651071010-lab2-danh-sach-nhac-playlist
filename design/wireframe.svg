@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%" fill="#f8fafc">
+  <defs>
+    <style>
+      .title { font-family: system-ui, sans-serif; font-weight: bold; fill: #0f172a; }
+      .subtitle { font-family: system-ui, sans-serif; fill: #64748b; font-size: 14px; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; rx: 8; }
+      .emerald { fill: #059669; }
+      .emerald-light { fill: #ecfdf5; stroke: #059669; }
+      .text-sm { font-family: system-ui, sans-serif; font-size: 12px; fill: #334155; }
+      .text-xs { font-family: system-ui, sans-serif; font-size: 10px; fill: #64748b; }
+      .badge { rx: 4; fill: #10b981; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f1f5f9" />
+
+  <!-- Main Title -->
+  <text x="40" y="45" class="title" font-size="24">WIREFRAME KIẾN TRÚC GIAO DIỆN MELODYHUB (MSSV: 6651071010)</text>
+  <text x="40" y="70" class="subtitle">Chủ đề: Danh sách nhạc / Playlist &bull; Màu chủ đạo: Emerald (#059669) &bull; Breakpoints: Mobile (&lt;640px) | Tablet (640-1024px) | Desktop (&gt;1024px)</text>
+
+  <!-- SCREEN 1: DESKTOP LIST PAGE (> 1024px) -->
+  <g transform="translate(40, 100)">
+    <!-- Browser Window Frame -->
+    <rect width="700" height="460" rx="12" class="box" fill="#ffffff" />
+    <path d="M0 12 Q0 0 12 0 L688 0 Q700 0 700 12 L700 36 L0 36 Z" fill="#e2e8f0" />
+    <circle cx="20" cy="18" r="5" fill="#ef4444" />
+    <circle cx="36" cy="18" r="5" fill="#f59e0b" />
+    <circle cx="52" cy="18" r="5" fill="#10b981" />
+    <rect x="80" y="8" width="500" height="20" rx="6" fill="#ffffff" />
+    <text x="90" y="22" class="text-xs" fill="#94a3b8">https://melodyhub.vercel.app/ (Desktop View &gt; 1024px)</text>
+
+    <!-- Header -->
+    <rect x="20" y="48" width="660" height="36" rx="6" fill="#ffffff" stroke="#e2e8f0" />
+    <rect x="30" y="54" width="24" height="24" rx="4" class="emerald" />
+    <text x="60" y="70" class="title" font-size="14">MelodyHub</text>
+    <rect x="520" y="54" width="70" height="24" rx="6" fill="#f1f5f9" />
+    <text x="530" y="70" class="text-xs">Bài hát</text>
+    <circle cx="660" cy="66" r="10" fill="#f1f5f9" stroke="#cbd5e1" />
+
+    <!-- Hero Banner -->
+    <rect x="20" y="94" width="660" height="65" rx="8" class="emerald" />
+    <text x="40" y="122" font-family="system-ui" font-size="16" font-weight="bold" fill="#ffffff">Khám Phá Giai Điệu Cuộc Sống</text>
+    <text x="40" y="142" font-family="system-ui" font-size="11" fill="#d1fae5">Bộ sưu tập 24 bài hát hot nhất &bull; Lọc debounce 300ms &bull; Phân trang &bull; Dark mode</text>
+
+    <!-- Filter Bar -->
+    <rect x="20" y="168" width="660" height="30" rx="6" fill="#f8fafc" stroke="#cbd5e1" />
+    <text x="35" y="188" class="text-xs" fill="#94a3b8">🔍 Tìm kiếm tên bài hát, ca sĩ, album... (debounce 300ms)</text>
+    
+    <!-- Genre Chips -->
+    <g transform="translate(20, 206)">
+      <rect x="0" y="0" width="50" height="18" rx="9" class="emerald" />
+      <text x="10" y="13" font-family="system-ui" font-size="9" fill="#ffffff">Tất cả</text>
+      <rect x="56" y="0" width="45" height="18" rx="9" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="68" y="13" font-family="system-ui" font-size="9" fill="#64748b">Pop</text>
+      <rect x="107" y="0" width="48" height="18" rx="9" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="117" y="13" font-family="system-ui" font-size="9" fill="#64748b">Ballad</text>
+      <rect x="161" y="0" width="50" height="18" rx="9" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="171" y="13" font-family="system-ui" font-size="9" fill="#64748b">R&amp;B</text>
+      <rect x="217" y="0" width="45" height="18" rx="9" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="227" y="13" font-family="system-ui" font-size="9" fill="#64748b">Rock</text>
+    </g>
+
+    <!-- Song Cards Grid (Desktop: 4 Columns) -->
+    <g transform="translate(20, 232)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="155" height="160" rx="8" class="box" />
+      <rect x="8" y="8" width="139" height="75" rx="6" fill="#e2e8f0" />
+      <circle cx="77" cy="45" r="14" class="emerald" />
+      <polygon points="74,39 83,45 74,51" fill="#ffffff" />
+      <text x="10" y="102" class="title" font-size="11">Nấu Ăn Cho Em</text>
+      <text x="10" y="117" class="text-xs" fill="#059669">Đen Vâu ft. PiaLinh</text>
+      <text x="10" y="132" class="text-xs">Album 2023 &bull; 04:15</text>
+      <text x="10" y="152" font-family="system-ui" font-size="10" font-weight="bold" fill="#059669">25.000 ₫</text>
+
+      <!-- Card 2 -->
+      <rect x="168" y="0" width="155" height="160" rx="8" class="box" />
+      <rect x="176" y="8" width="139" height="75" rx="6" fill="#e2e8f0" />
+      <circle cx="245" cy="45" r="14" class="emerald" />
+      <polygon points="242,39 251,45 242,51" fill="#ffffff" />
+      <text x="178" y="102" class="title" font-size="11">Cắt Đôi Nỗi Sầu</text>
+      <text x="178" y="117" class="text-xs" fill="#059669">Tăng Duy Tân</text>
+      <text x="178" y="132" class="text-xs">EDM &bull; 03:12</text>
+      <text x="178" y="152" font-family="system-ui" font-size="10" font-weight="bold" fill="#059669">20.000 ₫</text>
+
+      <!-- Card 3 -->
+      <rect x="336" y="0" width="155" height="160" rx="8" class="box" />
+      <rect x="344" y="8" width="139" height="75" rx="6" fill="#e2e8f0" />
+      <circle cx="413" cy="45" r="14" class="emerald" />
+      <polygon points="410,39 419,45 410,51" fill="#ffffff" />
+      <text x="346" y="102" class="title" font-size="11">Ngày Mai Lấy Chồng</text>
+      <text x="346" y="117" class="text-xs" fill="#059669">Thành Đạt</text>
+      <text x="346" y="132" class="text-xs">Ballad &bull; 05:20</text>
+      <text x="346" y="152" font-family="system-ui" font-size="10" font-weight="bold" fill="#059669">18.000 ₫</text>
+
+      <!-- Card 4 -->
+      <rect x="504" y="0" width="156" height="160" rx="8" class="box" />
+      <rect x="512" y="8" width="140" height="75" rx="6" fill="#e2e8f0" />
+      <circle cx="582" cy="45" r="14" class="emerald" />
+      <polygon points="579,39 588,45 579,51" fill="#ffffff" />
+      <text x="514" y="102" class="title" font-size="11">Bật Tình Yêu Lên</text>
+      <text x="514" y="117" class="text-xs" fill="#059669">Hòa Minzy &amp; Tân</text>
+      <text x="514" y="132" class="text-xs">Pop &bull; 03:30</text>
+      <text x="514" y="152" font-family="system-ui" font-size="10" font-weight="bold" fill="#059669">22.000 ₫</text>
+    </g>
+
+    <!-- Pagination -->
+    <g transform="translate(20, 410)">
+      <text x="0" y="20" class="text-xs">Hiển thị 1 - 8 trong 24 bài hát (Số bài/trang: 8)</text>
+      <rect x="470" y="4" width="30" height="24" rx="4" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="477" y="20" class="text-xs">&lt;</text>
+      <rect x="506" y="4" width="24" height="24" rx="4" class="emerald" />
+      <text x="515" y="20" font-family="system-ui" font-size="11" fill="#ffffff">1</text>
+      <rect x="536" y="4" width="24" height="24" rx="4" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="545" y="20" class="text-xs">2</text>
+      <rect x="566" y="4" width="24" height="24" rx="4" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="575" y="20" class="text-xs">3</text>
+      <rect x="596" y="4" width="30" height="24" rx="4" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="604" y="20" class="text-xs">&gt;</text>
+    </g>
+  </g>
+
+  <!-- SCREEN 2: MOBILE VIEW (< 640px) -->
+  <g transform="translate(770, 100)">
+    <!-- Mobile Phone Frame -->
+    <rect width="210" height="460" rx="20" fill="#1e293b" />
+    <rect x="8" y="8" width="194" height="444" rx="14" fill="#ffffff" />
+    <circle cx="105" cy="18" r="3" fill="#64748b" />
+
+    <!-- Mobile Header -->
+    <rect x="16" y="32" width="178" height="28" rx="4" fill="#ffffff" stroke="#e2e8f0" />
+    <rect x="22" y="38" width="16" height="16" rx="3" class="emerald" />
+    <text x="44" y="50" class="title" font-size="10">MelodyHub</text>
+    <circle cx="180" cy="46" r="6" fill="#f1f5f9" stroke="#cbd5e1" />
+
+    <!-- Mobile Search -->
+    <rect x="16" y="68" width="178" height="22" rx="4" fill="#f8fafc" stroke="#cbd5e1" />
+    <text x="24" y="82" font-family="system-ui" font-size="8" fill="#94a3b8">🔍 Tìm kiếm (debounce 300ms)...</text>
+
+    <!-- Mobile Single Column Cards -->
+    <g transform="translate(16, 98)">
+      <rect x="0" y="0" width="178" height="85" rx="6" class="box" />
+      <rect x="6" y="6" width="70" height="73" rx="4" fill="#e2e8f0" />
+      <text x="82" y="24" class="title" font-size="9">Nấu Ăn Cho Em</text>
+      <text x="82" y="38" class="text-xs" fill="#059669">Đen Vâu ft. PiaLinh</text>
+      <text x="82" y="52" font-family="system-ui" font-size="8" fill="#64748b">Pop &bull; 04:15</text>
+      <text x="82" y="70" font-family="system-ui" font-size="9" font-weight="bold" fill="#059669">25.000 ₫</text>
+    </g>
+
+    <g transform="translate(16, 192)">
+      <rect x="0" y="0" width="178" height="85" rx="6" class="box" />
+      <rect x="6" y="6" width="70" height="73" rx="4" fill="#e2e8f0" />
+      <text x="82" y="24" class="title" font-size="9">Cắt Đôi Nỗi Sầu</text>
+      <text x="82" y="38" class="text-xs" fill="#059669">Tăng Duy Tân</text>
+      <text x="82" y="52" font-family="system-ui" font-size="8" fill="#64748b">EDM &bull; 03:12</text>
+      <text x="82" y="70" font-family="system-ui" font-size="9" font-weight="bold" fill="#059669">20.000 ₫</text>
+    </g>
+
+    <!-- Mobile Pagination -->
+    <g transform="translate(16, 395)">
+      <rect x="20" y="0" width="24" height="20" rx="3" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="27" y="14" font-family="system-ui" font-size="9">&lt;</text>
+      <rect x="50" y="0" width="20" height="20" rx="3" class="emerald" />
+      <text x="58" y="14" font-family="system-ui" font-size="9" fill="#ffffff">1</text>
+      <rect x="76" y="0" width="20" height="20" rx="3" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="84" y="14" font-family="system-ui" font-size="9">2</text>
+      <rect x="102" y="0" width="24" height="20" rx="3" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="109" y="14" font-family="system-ui" font-size="9">&gt;</text>
+    </g>
+  </g>
+
+  <!-- SCREEN 3: DETAIL PAGE (/item/:id) -->
+  <g transform="translate(40, 580)">
+    <rect width="940" height="280" rx="12" class="box" fill="#ffffff" />
+    <path d="M0 12 Q0 0 12 0 L928 0 Q940 0 940 12 L940 32 L0 32 Z" fill="#e2e8f0" />
+    <text x="20" y="21" class="text-xs" fill="#475569">DETAIL PAGE: /item/:id (Chi tiết bài hát &amp; Trình phát nhạc Audio Player)</text>
+
+    <!-- Detail Content -->
+    <g transform="translate(30, 48)">
+      <text x="0" y="15" class="text-xs" fill="#059669" font-weight="bold">&larr; Quay lại danh sách (dùng Link)</text>
+      
+      <!-- Cover Large -->
+      <rect x="0" y="30" width="140" height="140" rx="10" fill="#e2e8f0" stroke="#cbd5e1" />
+      <text x="35" y="105" class="text-xs" fill="#64748b">[Ảnh Bìa Album]</text>
+
+      <!-- Song Meta -->
+      <g transform="translate(160, 30)">
+        <text x="0" y="20" class="title" font-size="20">Nấu Ăn Cho Em</text>
+        <text x="0" y="42" class="title" font-size="14" fill="#059669">Đen Vâu ft. PiaLinh</text>
+        <text x="0" y="64" class="text-xs">Album: Single Tuyển Chọn 2023 &bull; Thể loại: Hip-hop/Rap &bull; Năm: 2023 &bull; Bitrate: 320 kbps</text>
+        <text x="0" y="85" class="text-xs">Giá bản quyền: <tspan font-weight="bold" fill="#059669">25.000 ₫</tspan> (định dạng bằng formatCurrency)</text>
+        <rect x="0" y="98" width="50" height="18" rx="4" fill="#f1f5f9" stroke="#cbd5e1" />
+        <text x="10" y="111" class="text-xs">#Ý nghĩa</text>
+        <rect x="60" y="98" width="60" height="18" rx="4" fill="#f1f5f9" stroke="#cbd5e1" />
+        <text x="70" y="111" class="text-xs">#Trending</text>
+      </g>
+
+      <!-- Audio Player Bar -->
+      <g transform="translate(0, 185)">
+        <rect width="880" height="40" rx="8" fill="#f8fafc" stroke="#cbd5e1" />
+        <circle cx="25" cy="20" r="14" class="emerald" />
+        <polygon points="22,14 31,20 22,26" fill="#ffffff" />
+        <text x="50" y="25" class="text-xs" font-weight="bold">Trình phát nhạc Audio (HTML5)</text>
+        <rect x="230" y="17" width="540" height="6" rx="3" fill="#cbd5e1" />
+        <rect x="230" y="17" width="220" height="6" rx="3" class="emerald" />
+        <text x="790" y="24" class="text-xs font-mono">01:42 / 04:15</text>
+      </g>
+    </g>
+  </g>
+</svg>
